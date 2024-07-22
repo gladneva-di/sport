@@ -1,0 +1,152 @@
+$font-size: 1rem;
+$font-color: #000;
+$bg-color: #fff;
+$bg-second-color: #ffff52;
+
+.training .block__info_right-text {
+  max-width: 369px;
+}
+.training .header__title {
+  padding: 184px 0 0;
+}
+.training .block__info_right {
+  padding: 35px 24px 0 45px;
+}
+.training .block__info_left {
+  padding: 35px 45px 0 0;
+}
+
+.training__desc {
+  position: relative;
+  padding: 0 45px;
+}
+.training__desc_text {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 120px;
+  letter-spacing: -0.03em;
+  text-indent: 17%;
+}
+.training__desc_small {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: -0.02em;
+}
+.f-page .training__desc_small {
+  max-width: 926px;
+  margin-bottom: 47px;
+  text-indent: 21%;
+}
+.training__desc1 {
+  margin: 175px 0 215px;
+}
+.f-page .training__desc1 {
+  margin: 157px 0 0;
+}
+.training__desc2 {
+  margin: 238px 0 60px;
+}
+.training__desc span {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 26.75px;
+  position: absolute;
+}
+.training__desc1 img {
+  position: absolute;
+  bottom: 87px;
+  left: 51px;
+}
+.training__desc2 img {
+  position: absolute;
+  bottom: 249px;
+  left: 256px;
+  z-index: -1;
+}
+.training .gallery__box-scroll {
+  column-gap: 24px;
+}
+.training .nav__actions_box {
+  width: unset;
+}
+.training__wrap {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 50%;
+}
+.training__wrap p {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-indent: 47%;
+}
+.training__ava {
+  padding-top: 21px;
+  margin-right: 45px;
+  margin-bottom: 70px;
+  border-top: 1px solid #000000;
+  position: relative;
+}
+.training__ava p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 33px;
+}
+.training__ava span {
+  text-decoration: underline;
+}
+.training__ava_el {
+  position: absolute;
+  bottom: 0;
+  left: -232px;
+}
+.ava_anime-img {
+  position: absolute;
+  bottom: 0;
+  left: -230px;
+}
+.training .training__ava {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  float: right;
+  width: 49%;
+  max-width: 928px;
+  margin-bottom: 153px;
+}
+.training .form {
+  width: 100%;
+}
+.training .form__box {
+  padding: 0 36px;
+}
+.training .line {
+  position: unset;
+  height: 324px;
+}
+.training .cards .line {
+  height: 372px;
+}
+.training .block__info_box {
+  padding-bottom: 240px;
+  background: $bg-second-color;
+}
+.training .nav {
+  background: $bg-second-color;
+  color: $font-color;
+}
+.training .form button {
+  margin-top: 62px;
+}
+.training .form {
+  padding: 39px 46px 49px 40px;
+}
+.training .f__block_info {
+  margin-top: 96px;
+}

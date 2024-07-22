@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="../d4663fe0499b32282d80.js"></script>
+
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="../b88d04fba731603756b1.css" />
+    <link rel="stylesheet" type="text/css" href="../b88d04fba731603756b1.css" />
+    <!-- <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./carousel.css" /> -->
+<script defer src="../scripts/contacts.js"></script><link href="../styles/contacts.css" rel="stylesheet"></head>
+
+<body>
+    <div id="root" class="contacts">
+        <nav class="nav">
+            <div class="header_left">
+                <nav id="menu" class="f-page__nav">
+                    <ul class="f-menu" itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li class="f-link__menu" itemprop="itemListElement1 f-link_menu_active" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="/">календарь мероприятий</a>
+                        </li>
+                        <li class="f-link__menu" itemprop="itemListElement2" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#">футбол</a>
+                        </li>
+                        <li class="f-link__menu" itemprop="itemListElement3" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#">твд</a>
+                        </li>
+                        <li class="f-link__menu" itemprop="itemListElement4" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#">стретчинг</a>
+                        </li>
+                        <li class="f-link__menu" itemprop="itemListElement2" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#">пилатес</a>
+                        </li>
+                        <li class="f-link__menu" itemprop="itemListElement3" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="#">галерея</a>
+                        </li>
+                        <li itemprop="item" class="f-link__menu" itemprop="itemListElement4" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a href="#">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_right">
+                <div class="dropdown">
+                    <div class="dropdown__city">
+                        <p>Ваш город <span>Москва</span></p>
+                    </div>
+                    <div class="dropdown__button select__category ordering__data-dropdown">
+                        [&nbsp;&nbsp;&nbsp;<span>Выберите город</span>&nbsp;&nbsp;&nbsp;]
+                    </div>
+                    <ul class="dropdown__list">
+                        <li class="dropdown__list-item" data-value="category1">
+                            <span>Москва</span>
+                        </li>
+
+                        <li class="dropdown__list-item" data-value="category1">
+                            <span>Самара</span>
+                        </li>
+                        <li class="dropdown__list-item" data-value="category2">
+                            <span>Новгород</span>
+                        </li>
+                        <li class="dropdown__list-item" data-value="category3">
+                            <span>Тула</span>
+                        </li>
+                        <li class="dropdown__list-item" data-value="category4">
+                            <span>Северодвинск</span>
+                        </li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input-hidden" />
+                </div>
+            </div>
+        </nav>
+        <div class="header__box">
+            <h1 class="gallery__title">контакты</h1>
+            <div class="gallery__box_info">
+                <div class="gallery__block gallery__box_title">
+                    <img class="gallery__img element-to-animate" src="../images/page_img.svg">
+                    <img class="stretch_img" src="../images/contacts_img.png">
+                </div>
+                <div class="gallery__block gallery__box_text">
+                    <div class="contacts__box">
+                        <div class="contacts__block contacts__tel">
+                            <span>[ телефон ]</span>
+                            <p>+7 (918) 190-03-37</p>
+                        </div>
+                        <div class="contacts__block contacts__mail">
+                            <span>[ почта ]</span>
+                            <p>community@i-npz.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h1 class="form__title">заявка на участие</h1>
+            <form id="form" action="#" class="f__block_info f__form">
+                <div class="submit__box">
+                    <div class="form__box">
+                        <div class="form__field form__field1">
+                            <label for="name">фио</label>
+                            <input id="name" type="text" name="name" placeholder="карпич егор александрович"
+                                required />
+                        </div>
+                        <div class="form__field_box">
+                            <div class="form__field form__field1-1">
+                                <label for="sport">вид спорта</label>
+                                <input id="sport" type="text" name="name" placeholder="например, футбол" required />
+                            </div>
+                            <div class="form__tel_box">
+                                <div class="form__field form__field2">
+                                    <label for="phone">Телефон</label>
+                                    <input id="phone" type="tel" name="name" placeholder="+7"
+                                        minlength="18" maxlength="18" required />
+                                    <span class="form__error">Телефон указан неверно</span>
+                                </div>
+                                <div class="form__field form__field3">
+                                    <label for="emailField">Рабочая почта</label>
+                                    <input id="email" type="email" name="name" placeholder="e.karpich@i-npz.ru"
+                                        required />
+                                    <span class="form__error">Это поле должно содержать E-Mail в формате
+                                        example@site.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="submit__button" type="submit" value="Отправить"><span>подать заявку</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../4ed44cdfad13be2a3976.js"></script>
+    <script type="text/javascript" src="../af223425476364f62ec7.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox]', {
+            // Your custom options
+        });    
+    </script>
+
+</body>
+
+</html>

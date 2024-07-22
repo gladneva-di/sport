@@ -1,0 +1,7 @@
+.gallery__box-scroll::-webkit-scrollbar {
+  display: none;
+}
+.gallery__box-scroll {
+  display: flex;
+  overflow: scroll;
+}

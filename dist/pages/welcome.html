@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="../scripts/welcome.js"></script><link href="../styles/welcome.css" rel="stylesheet"></head>
+
+<body>
+    <div id="root" class="welcome">
+        <div class="welcome__wrap">
+            <div class="dropdown">
+                <div class="dropdown__button select__category ordering__data-dropdown">
+                    [&nbsp;&nbsp;&nbsp;<span>Выберите город</span>&nbsp;&nbsp;&nbsp;]
+                </div>
+                <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="category1">
+                        <span>Москва</span>
+                    </li>
+
+                    <li class="dropdown__list-item" data-value="category1">
+                        <span>Самара</span>
+                    </li>
+                    <li class="dropdown__list-item" data-value="category2">
+                        <span>Новгород</span>
+                    </li>
+                    <li class="dropdown__list-item" data-value="category3">
+                        <span>Тула</span>
+                    </li>
+                    <li class="dropdown__list-item" data-value="category4">
+                        <span>Северодвинск</span>
+                    </li>
+                </ul>
+                <input type="text" name="select-category" value="" class="dropdown__input-hidden" />
+            </div>
+            <div class="welcome__title">
+                <p>KNGK</p>
+                <p>SHAMARA</p>
+                <p>sport</p>
+            </div>
+            <div class="welcome__cards">
+                <div class="welcome__card welcome__card_left">
+                    <p class="welcome__city">Москва</p>
+                    <div class="welcome__img_box">
+                        <img class="welcome__plus" src="../images/plus.svg">
+                        <img class="welcome__img" src="../images/card_left-img.png">
+                    </div>
+                    <p class="welcome__num">[ 01. ]</p>
+                </div>
+                <div class="welcome__card welcome__card_right">
+                    <p class="welcome__city">Краснодар</p>
+                    <div class="welcome__img_box">
+                        <img class="welcome__plus" src="../images/plus.svg">
+                        <img class="welcome__img" src="../images/card_right-img.png">
+                    </div>
+                    <p class="welcome__num">[ 02. ]</p>
+                </div>
+                <img class="welcome__picture element-to-animate" src="../images/welcome_picture.svg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

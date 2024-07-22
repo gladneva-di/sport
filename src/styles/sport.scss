@@ -1,0 +1,65 @@
+.sport {
+  display: flex;
+  flex-direction: column;
+}
+.sport .header__title {
+  font-size: 240px;
+  line-height: 198px;
+}
+.sport .block__info_box {
+  padding-bottom: 334px;
+}
+.sport .training__desc2 {
+  margin: 248px 0 92px;
+}
+.sport .training__ava {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 49%;
+  max-width: 928px;
+  margin-bottom: 80px;
+}
+.sport .gallery__box-scroll {
+  column-gap: 24px;
+}
+.sport .training__text {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: -0.03em;
+  text-indent: 46%;
+  max-width: 931px;
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 66px;
+}
+.sport .training__desc_bottom {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 64.75px;
+  max-width: 852px;
+  display: flex;
+  align-self: flex-end;
+  text-indent: 32%;
+  margin-bottom: 168px;
+}
+.sport .training__desc1 {
+  margin: 175px 0 56px;
+}
+.sport .form__title {
+  width: 49%;
+}
+.sport .form__title_box {
+  display: flex;
+}
+.sport .form__title_box p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 33px;
+}
+.sport .training__desc1 img {
+    position: absolute;
+    bottom: 187px;
+    left: 780px;
+}

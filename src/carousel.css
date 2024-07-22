@@ -1,0 +1,30 @@
+.slick-dots {
+  display: none !important;
+}
+
+.slide_preview {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-nav .slick-slide img {
+    width: 282px;
+    height: 220px;
+  max-width: 282px;
+  border-radius: 16px;
+}
+.slider-nav .slick-slide:not(:last-child) {
+    margin-right: 30px;
+}
+
+.slider-for .slick-slide img {
+  width: 281px;
+  height: 229px;
+  /* width: 100%; */
+  /* max-width: 433px; */
+  margin-bottom: 24px;
+  border-radius: 16px;
+}
+.slick-list {
+    max-width: 1840px;
+}

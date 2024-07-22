@@ -1,0 +1,22 @@
+// slick
+.slick-dots {
+    display: none !important;
+  }
+  
+  .slide_preview {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-for .slick-slide img {
+    width: 433px;
+    width: 100%;
+    max-width: 433px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+  }
+  .slider-nav .slick-slide {
+    width: 200px;
+    max-width: 200px;
+  }
+  

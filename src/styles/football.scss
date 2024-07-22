@@ -1,0 +1,78 @@
+$font-size: 1rem;
+$font-color: #000;
+$bg-color: #fff;
+$bg-second-color: #ffff52;
+
+.football .header {
+  background: url("../images/football_bg.png");
+  color: $bg-second-color;
+  color: $bg-second-color;
+}
+.football .line,
+.football .block__info_left,
+.football .block__info_right {
+  border-color: $bg-second-color;
+}
+.football .training__desc1 img {
+  bottom: 340px;
+  left: 838px;
+}
+.football .training__desc_bottom {
+  margin-bottom: 179px;
+}
+.football__trainer_box {
+  display: flex;
+  margin-top: 35px;
+  padding: 0 40px;
+}
+.football__count_text {
+  display: flex;
+  width: 50%;
+  border-top: 1px solid #000000;
+  padding-top: 19px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34.5px;
+}
+.football .football__trainer_box .line {
+  position: unset;
+  border-color: $font-color;
+  height: 577px;
+}
+.football .training__ava {
+  margin-right: 0;
+  justify-content: unset;
+  column-gap: 37px;
+  margin-bottom: 267px;
+  padding-top: 37px;
+}
+.football .training__ava_img {
+  padding-left: 47px;
+}
+.football .trainer_box {
+  display: flex;
+  flex-direction: column;
+}
+.football .training__ava span {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  max-width: 169px;
+}
+.football__team {
+    padding: 0 40px;
+}
+.football__title {
+  margin-bottom: 19px;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 120px;
+  letter-spacing: -0.025em;
+}
+.football__team_img {
+  border-top: 1px solid #000000;
+  padding-top: 16px;
+  width: 100%;
+}

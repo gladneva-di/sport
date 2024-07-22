@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="../scripts/gallery.js"></script><link href="../styles/gallery.css" rel="stylesheet"></head>
+
+<body>
+    <div id="root" class="gallery">
+        <header class="header">
+            <nav class="nav">
+                <div class="header_left">
+                    <nav id="menu" class="f-page__nav">
+                        <ul class="f-menu" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="f-link__menu" itemprop="itemListElement1 f-link_menu_active" itemscope
+                                itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="/">календарь мероприятий</a>
+                            </li>
+                            <li class="f-link__menu" itemprop="itemListElement2" itemscope
+                                itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="#">футбол</a>
+                            </li>
+                            <li class="f-link__menu" itemprop="itemListElement3" itemscope
+                                itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="#">твд</a>
+                            </li>
+                            <li class="f-link__menu" itemprop="itemListElement4" itemscope
+                                itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="#">стретчинг</a>
+                            </li>
+                            <li class="f-link__menu" itemprop="itemListElement2" itemscope
+                                itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="#">пилатес</a>
+                            </li>
+                            <li class="f-link__menu" itemprop="itemListElement3" itemscope
+                                itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="#">галерея</a>
+                            </li>
+                            <li itemprop="item" class="f-link__menu" itemprop="itemListElement4" itemscope
+                                itemtype="http://schema.org/ListItem">
+                                <a href="#">контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_right">
+                    <div class="dropdown">
+                        <div class="dropdown__city">
+                            <p>Ваш город <span>Москва</span></p>
+                        </div>
+                        <div class="dropdown__button select__category ordering__data-dropdown">
+                            [&nbsp;&nbsp;&nbsp;<span>Выберите город</span>&nbsp;&nbsp;&nbsp;]
+                        </div>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="category1">
+                                <span>Москва</span>
+                            </li>
+
+                            <li class="dropdown__list-item" data-value="category1">
+                                <span>Самара</span>
+                            </li>
+                            <li class="dropdown__list-item" data-value="category2">
+                                <span>Новгород</span>
+                            </li>
+                            <li class="dropdown__list-item" data-value="category3">
+                                <span>Тула</span>
+                            </li>
+                            <li class="dropdown__list-item" data-value="category4">
+                                <span>Северодвинск</span>
+                            </li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden" />
+                    </div>
+                </div>
+            </nav>
+            <div class="title__box">
+                <h1 class="header__title inner">галерея</h1>
+                <div class="block__info">
+                    <img class="element-to-animate" src="../images/title_img.svg">
+                    <div class="block__info_box">
+                        <div class="block__info_left">
+                            <p>KNGK SHAMARA SPORT TEAM</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="block__info_right">
+                            <p class="block__info_right-text">Посмотрите, через
+                                что мы уже прошли</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="gallery__list_box">
+            <div class="gallery__count_box">6</div>
+            <div class="gallery__list">
+                <div class="gallery__row">
+                    <div class="gallery__list_row gallery__list_left">
+                        <a href="./page.html" class="gallery__list_item">
+                            <span>01.</span>
+                            <p>[&nbsp;&nbsp;футбол&nbsp;&nbsp;]</p>
+                        </a>
+                        <img class="gallery__list_img gallery__list_img1" src="../images/gallery_img1.png">
+                        <img class="gallery__list_icon" src="../images/ellipse.svg">
+                    </div>
+                    <div class="gallery__list_row gallery__list_right">
+                        <div class="gallery__links-box">
+                            <p class="gallery__list_item">москва, Лужнецкая набережная</p>
+                            <p class="gallery__list_item">тренировка выходного дня</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__row">
+                    <div class="gallery__list_row gallery__list_left">
+                        <a href="./page.html" class="gallery__list_item">
+                            <span>02.</span>
+                            <p>[&nbsp;&nbsp;твд&nbsp;&nbsp;]</p>
+                        </a>
+                        <img class="gallery__list_img gallery__list_img1" src="../images/gallery_img1.png">
+                        <img class="gallery__list_icon" src="../images/ellipse.svg">
+                    </div>
+                    <div class="gallery__list_row gallery__list_right">
+                        <div class="gallery__links-box">
+                            <p class="gallery__list_item">москва, Лужнецкая набережная</p>
+                            <p class="gallery__list_item">тренировка выходного дня</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__row">
+                    <div class="gallery__list_row gallery__list_left">
+                        <a href="./page.html" class="gallery__list_item">
+                            <span>03.</span>
+                            <p>[&nbsp;&nbsp;стретчинг&nbsp;&nbsp;]</p>
+                        </a>
+                        <img class="gallery__list_img gallery__list_img1" src="../images/gallery_img1.png">
+                        <img class="gallery__list_icon" src="../images/ellipse.svg">
+                    </div>
+                    <div class="gallery__list_row gallery__list_right">
+                        <div class="gallery__links-box">
+                            <p class="gallery__list_item">москва, Лужнецкая набережная</p>
+                            <p class="gallery__list_item">тренировка выходного дня</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__row">
+                    <div class="gallery__list_row gallery__list_left">
+                        <a href="./page.html" class="gallery__list_item">
+                            <span>04.</span>
+                            <p>[&nbsp;&nbsp;пилатес&nbsp;&nbsp;]</p>
+                        </a>
+                        <img class="gallery__list_img gallery__list_img1" src="../images/gallery_img1.png">
+                        <img class="gallery__list_icon" src="../images/ellipse.svg">
+                    </div>
+                    <div class="gallery__list_row gallery__list_right">
+                        <div class="gallery__links-box">
+                            <p class="gallery__list_item">москва, Лужнецкая набережная</p>
+                            <p class="gallery__list_item">тренировка выходного дня</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__row">
+                    <div class="gallery__list_row gallery__list_left">
+                        <a href="./page.html" class="gallery__list_item">
+                            <span>05.</span>
+                            <p>[&nbsp;&nbsp;велопробег&nbsp;&nbsp;]</p>
+                        </a>
+                        <img class="gallery__list_img gallery__list_img1" src="../images/gallery_img1.png">
+                        <img class="gallery__list_icon" src="../images/ellipse.svg">
+                    </div>
+                    <div class="gallery__list_row gallery__list_right">
+                        <div class="gallery__links-box">
+                            <p class="gallery__list_item">москва, Лужнецкая набережная</p>
+                            <p class="gallery__list_item">тренировка выходного дня</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__row">
+                    <div class="gallery__list_row gallery__list_left">
+                        <a href="./page.html" class="gallery__list_item">
+                            <span>06.</span>
+                            <p>[&nbsp;&nbsp;лыжи&nbsp;&nbsp;]</p>
+                        </a>
+                        <img class="gallery__list_img gallery__list_img1" src="../images/gallery_img1.png">
+                        <img class="gallery__list_icon" src="../images/ellipse.svg">
+                    </div>
+                    <div class="gallery__list_row gallery__list_right">
+                        <div class="gallery__links-box">
+                            <p class="gallery__list_item">москва, Лужнецкая набережная</p>
+                            <p class="gallery__list_item">тренировка выходного дня</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- галерея -->
+        <div class="gallery__imgs-box">
+            <div class="gallery__box-scroll">
+                <a data-fancybox="gallery" data-src="../images/glr1.png">
+                    <img src="../images/glr1.png" />
+                </a>
+                <a data-fancybox="gallery" data-src="../images/glr2.png">
+                    <img src="../images/glr2.png" />
+                </a>
+                <a data-fancybox="gallery" data-src="../images/glr3.png">
+                    <img src="../images/glr3.png" />
+                </a>
+                <a data-fancybox="gallery" data-src="../images/glr4.png">
+                    <img src="../images/glr4.png" />
+                </a>
+                <a data-fancybox="gallery" data-src="../images/glr5.png">
+                    <img src="../images/glr5.png" />
+                </a>
+                <a data-fancybox="gallery" data-src="../images/glr6.png">
+                    <img src="../images/glr6.png" />
+                </a>
+                <a data-fancybox="gallery" data-src="../images/glr7.png">
+                    <img src="../images/glr7.png" />
+                </a>
+                <a data-fancybox="gallery" data-src="../images/glr8.png">
+                    <img src="../images/glr8.png" />
+                </a>
+                <a data-fancybox="gallery" data-src="../images/glr9.png">
+                    <img src="../images/glr9.png" />
+                </a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

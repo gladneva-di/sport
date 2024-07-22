@@ -1,0 +1,81 @@
+$font-size: 1rem;
+$font-color: #000;
+$bg-color: #fff;
+$bg-second-color: #ffff52;
+
+.welcome .dropdown {
+  max-width: 430px;
+  margin: 0 auto 24px;
+}
+.welcome .dropdown__button {
+  margin: 0 auto;
+}
+.welcome .dropdown__list {
+  left: 0;
+  margin: 15px auto 0;
+}
+.welcome__wrap {
+  padding: 253px 158px 308px 170px;
+  background: $bg-second-color;
+}
+.welcome__title {
+  display: flex;
+  justify-content: space-between;
+}
+.welcome__title p {
+  font-size: 240px;
+  font-weight: 700;
+  line-height: 220.85px;
+  letter-spacing: -0.03em;
+}
+.welcome__cards {
+  display: flex;
+  column-gap: 18px;
+  justify-content: center;
+  position: relative;
+}
+.welcome__img_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  column-gap: 33px;
+}
+.welcome__card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222426;
+  border-radius: 4px;
+  background: $bg-second-color;
+  padding: 26px 16px 19px 19px;
+  width: 536px;
+  z-index: 1;
+}
+.welcome__city {
+  margin-bottom: 38px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36.81px;
+  letter-spacing: -0.03em;
+}
+.welcome__city::before {
+  content: url("../images/welcome_arr.svg");
+  margin-right: 12px;
+}
+.welcome__num {
+  margin-top: -16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.04em;
+}
+.welcome__plus {
+  max-width: 106px;
+}
+.welcome__img {
+  margin-top: 53px;
+}
+.welcome__picture {
+  position: absolute;
+  top: 99px;
+  left: 200px;
+}

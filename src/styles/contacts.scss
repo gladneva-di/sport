@@ -1,0 +1,80 @@
+$font-size: 1rem;
+$font-color: #000;
+$bg-color: #fff;
+$bg-second-color: #ffff52;
+
+.contacts .form {
+  background: none;
+  padding: 0 40px;
+}
+.contacts .form button {
+  background: $bg-second-color;
+  max-width: 444px;
+}
+.contacts .form button span {
+  color: $font-color;
+}
+.contacts .stretch_img {
+  padding-top: 23px;
+}
+.contacts .gallery__box_info {
+  justify-content: space-between;
+}
+.contacts .contacts__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.contacts__block {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .gallery__box_info p {
+  max-width: unset;
+  text-indent: unset;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+}
+.contacts__block {
+  border-top: 1px solid #000000;
+  padding-top: 17px;
+}
+.contacts .form__tel_box {
+  display: flex;
+  column-gap: 24px;
+}
+.contacts .gallery__box_info span {
+  font-size: 30px;
+  line-height: 30px;
+}
+.contacts .form__field_box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  row-gap: 51px;
+}
+.contacts .form__box {
+  justify-content: space-between;
+}
+.contacts .form__field {
+  width: 49%;
+  margin-left: unset;
+  max-width: unset;
+}
+.contacts .form__field1-1 {
+  width: 100%;
+}
+.contacts .form button {
+  margin-top: 37px;
+  padding: 14px 0 9px;
+}
+.contacts .form button span {
+  font-size: 30px;
+}
+.contacts .nav {
+  padding: 18px 40px 0;
+}
+.contacts .gallery__box_info {
+  margin-bottom: 104px;
+}
