@@ -30,16 +30,6 @@ eval("var btn = document.querySelector(\".dropdown__button span\");\nvar dropdow
 
 /***/ }),
 
-/***/ "./src/scripts/form.js":
-/*!*****************************!*\
-  !*** ./src/scripts/form.js ***!
-  \*****************************/
-/***/ (() => {
-
-eval("// отправка формы\n\nvar submitBtn = document.querySelector(\".submit__button\");\nvar f = document.querySelector(\".f__form\");\nconsole.clear();\nvar validate = new JustValidate(\"#form\", {\n  errorLabelStyle: {\n    color: \"#EF6461\"\n  }\n});\nvar phone = document.querySelector(\"#phone\");\nvar button = document.querySelector(\".form__btn\");\nvar im = new Inputmask(\"+7(999)999-99-99\");\nim.mask(phone);\nvalidate.addField(\"#name\", [{\n  rule: \"required\",\n  errorMessage: \"Введите имя\"\n}, {\n  rule: \"customRegexp\",\n  value: /[A-Za-zА-яЁё]/gi,\n  errorMessage: \"Недопустимый формат\"\n}, {\n  rule: \"minLength\",\n  value: 2,\n  errorMessage: \"Минимум 2 символа\"\n}]).addField(\"#email\", [{\n  rule: \"required\",\n  errorMessage: \"Введите email\"\n}, {\n  rule: \"email\",\n  errorMessage: \"Ошибка email\"\n}]).addField(\"#phone\", [{\n  validator: function validator(value) {\n    var num = phone.inputmask.unmaskedvalue();\n    return Boolean(Number(num) && num.length > 0);\n  },\n  errorMessage: \"Введите телефон\"\n}, {\n  validator: function validator(value) {\n    var num = phone.inputmask.unmaskedvalue();\n    return Boolean(Number(num) && num.length === 10);\n  },\n  errorMessage: \"Введите телефон полностью\"\n}]).onSuccess(function (event) {\n  var formData = new FormData(document.getElementById(\"form\"));\n  fetch(\"https://httpbin.org/post\", {\n    method: \"POST\",\n    body: formData\n  }).then(function (response) {\n    if (response.ok) {\n      document.getElementById(\"form\").reset();\n      submitBtn.innerText = \"Отправлено\";\n      // $.fancybox.close();\n      $.fancybox.open({\n        src: \"#hidden_success\",\n        type: \"inline\"\n      });\n      setTimeout(function () {\n        // $.fancybox.close();\n      }, 5000);\n    }\n  })[\"catch\"](function (error) {\n    console.error(\"Ошибка:\", error);\n  });\n});\n\n//# sourceURL=webpack://inpz/./src/scripts/form.js?");
-
-/***/ }),
-
 /***/ "./src/scripts/index.js":
 /*!******************************!*\
   !*** ./src/scripts/index.js ***!
@@ -47,7 +37,7 @@ eval("// отправка формы\n\nvar submitBtn = document.querySelector(\
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_training_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/training.scss */ \"./src/styles/training.scss\");\n/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fancyapps/ui */ \"./node_modules/@fancyapps/ui/dist/index.esm.js\");\n/* harmony import */ var _fancyapps_ui_dist_fancybox_fancybox_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fancyapps/ui/dist/fancybox/fancybox.css */ \"./node_modules/@fancyapps/ui/dist/fancybox/fancybox.css\");\n/* harmony import */ var _form_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form.js */ \"./src/scripts/form.js\");\n/* harmony import */ var _form_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_form_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _dropdown_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dropdown.js */ \"./src/scripts/dropdown.js\");\n/* harmony import */ var _dropdown_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_dropdown_js__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\n//# sourceURL=webpack://inpz/./src/scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_training_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/training.scss */ \"./src/styles/training.scss\");\n/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fancyapps/ui */ \"./node_modules/@fancyapps/ui/dist/index.esm.js\");\n/* harmony import */ var _fancyapps_ui_dist_fancybox_fancybox_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fancyapps/ui/dist/fancybox/fancybox.css */ \"./node_modules/@fancyapps/ui/dist/fancybox/fancybox.css\");\n/* harmony import */ var _dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dropdown.js */ \"./src/scripts/dropdown.js\");\n/* harmony import */ var _dropdown_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_dropdown_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! animate.css */ \"./node_modules/animate.css/animate.css\");\n\n\n\n\n// import \"./form.js\";\n\n\n\n//# sourceURL=webpack://inpz/./src/scripts/index.js?");
 
 /***/ }),
 
@@ -80,7 +70,18 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      (function() {\n        var localsJsonString = undefined;\n        // 1721630136467\n        var cssReload = __webpack_require__(/*! ../../../../mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {});\n        // only invalidate when locals change\n        if (\n          module.hot.data &&\n          module.hot.data.value &&\n          module.hot.data.value !== localsJsonString\n        ) {\n          module.hot.invalidate();\n        } else {\n          module.hot.accept();\n        }\n        module.hot.dispose(function(data) {\n          data.value = localsJsonString;\n          cssReload();\n        });\n      })();\n    }\n  \n\n//# sourceURL=webpack://inpz/./node_modules/@fancyapps/ui/dist/fancybox/fancybox.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      (function() {\n        var localsJsonString = undefined;\n        // 1724239673899\n        var cssReload = __webpack_require__(/*! ../../../../mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {});\n        // only invalidate when locals change\n        if (\n          module.hot.data &&\n          module.hot.data.value &&\n          module.hot.data.value !== localsJsonString\n        ) {\n          module.hot.invalidate();\n        } else {\n          module.hot.accept();\n        }\n        module.hot.dispose(function(data) {\n          data.value = localsJsonString;\n          cssReload();\n        });\n      })();\n    }\n  \n\n//# sourceURL=webpack://inpz/./node_modules/@fancyapps/ui/dist/fancybox/fancybox.css?");
+
+/***/ }),
+
+/***/ "./node_modules/animate.css/animate.css":
+/*!**********************************************!*\
+  !*** ./node_modules/animate.css/animate.css ***!
+  \**********************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      (function() {\n        var localsJsonString = undefined;\n        // 1724239673884\n        var cssReload = __webpack_require__(/*! ../mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {});\n        // only invalidate when locals change\n        if (\n          module.hot.data &&\n          module.hot.data.value &&\n          module.hot.data.value !== localsJsonString\n        ) {\n          module.hot.invalidate();\n        } else {\n          module.hot.accept();\n        }\n        module.hot.dispose(function(data) {\n          data.value = localsJsonString;\n          cssReload();\n        });\n      })();\n    }\n  \n\n//# sourceURL=webpack://inpz/./node_modules/animate.css/animate.css?");
 
 /***/ }),
 
@@ -91,7 +92,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      (function() {\n        var localsJsonString = undefined;\n        // 1721630136541\n        var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {});\n        // only invalidate when locals change\n        if (\n          module.hot.data &&\n          module.hot.data.value &&\n          module.hot.data.value !== localsJsonString\n        ) {\n          module.hot.invalidate();\n        } else {\n          module.hot.accept();\n        }\n        module.hot.dispose(function(data) {\n          data.value = localsJsonString;\n          cssReload();\n        });\n      })();\n    }\n  \n\n//# sourceURL=webpack://inpz/./src/styles/main.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      (function() {\n        var localsJsonString = undefined;\n        // 1724239673922\n        var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {});\n        // only invalidate when locals change\n        if (\n          module.hot.data &&\n          module.hot.data.value &&\n          module.hot.data.value !== localsJsonString\n        ) {\n          module.hot.invalidate();\n        } else {\n          module.hot.accept();\n        }\n        module.hot.dispose(function(data) {\n          data.value = localsJsonString;\n          cssReload();\n        });\n      })();\n    }\n  \n\n//# sourceURL=webpack://inpz/./src/styles/main.scss?");
 
 /***/ }),
 
@@ -102,7 +103,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      (function() {\n        var localsJsonString = undefined;\n        // 1721630136439\n        var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {});\n        // only invalidate when locals change\n        if (\n          module.hot.data &&\n          module.hot.data.value &&\n          module.hot.data.value !== localsJsonString\n        ) {\n          module.hot.invalidate();\n        } else {\n          module.hot.accept();\n        }\n        module.hot.dispose(function(data) {\n          data.value = localsJsonString;\n          cssReload();\n        });\n      })();\n    }\n  \n\n//# sourceURL=webpack://inpz/./src/styles/training.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      (function() {\n        var localsJsonString = undefined;\n        // 1724239673795\n        var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {});\n        // only invalidate when locals change\n        if (\n          module.hot.data &&\n          module.hot.data.value &&\n          module.hot.data.value !== localsJsonString\n        ) {\n          module.hot.invalidate();\n        } else {\n          module.hot.accept();\n        }\n        module.hot.dispose(function(data) {\n          data.value = localsJsonString;\n          cssReload();\n        });\n      })();\n    }\n  \n\n//# sourceURL=webpack://inpz/./src/styles/training.scss?");
 
 /***/ })
 
@@ -200,7 +201,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("cbb9fc626367437556d8")
+/******/ 		__webpack_require__.h = () => ("c0e99a3c91c786f51355")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

@@ -767,6 +767,11 @@ body {
   padding-top: 26px;
   padding-right: 27px; }
 
+.card__box1 {
+  font-size: 48px; }
+  .card__box1_bbbbb {
+    color: #000000; }
+
 .card__box1 span {
   font-size: 30px;
   font-weight: 400;
